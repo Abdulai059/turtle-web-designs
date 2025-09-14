@@ -1,12 +1,55 @@
-# React + Vite
+# Web Design Agency
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive website for a startup web design agency, showcasing services, portfolio, pricing, and automation tools like chatbots and WhatsApp integration.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents
 
-## Expanding the ESLint configuration
+- [Overview](#overview)  
+- [Features](#features)  
+- [Tech Stack](#tech-stack)  
+- [Folder Structure](#folder-structure)  
+- [Getting Started](#getting-started)  
+- [Usage](#usage)  
+- [Contributing](#contributing)  
+- [License](#license)  
+- [Contact](#contact)  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Overview
+
+This project demonstrates a professional web presence for a startup web design agency. It includes:
+
+- Responsive, mobile-first design  
+- Sections for Services, Portfolio, Pricing, Testimonials, and Contact  
+- Lead generation via website and chatbot integration  
+- Optional business automation for clients  
+
+---
+
+## Features
+
+- Fully responsive layout for all devices  
+- Clear navigation with call-to-action buttons  
+- Portfolio showcase with project descriptions  
+- Pricing packages (Starter, Growth, Premium)  
+- Client testimonials and social proof  
+- FAQ section to address common inquiries  
+- Contact form and WhatsApp integration  
+- Reusable UI components for rapid development  
+
+---
+
+## Tech Stack
+
+- **Frontend:** React.js / Next.js  
+- **Styling:** Tailwind CSS  
+- **Automation & Chatbot:** Optional OpenAI API, Twilio, or third-party services  
+- **Deployment:** Vercel or Netlify  
+
+---
+
+## Folder Structure
+
