@@ -12,7 +12,7 @@ export default function SimplePricing() {
   }, []);
   if (!mounted) return null;
   return (
-    <div className="flex items-center justify-center mt-20 sm:mt-20 sm:min-h-screen">
+    <div className="mt-20 flex items-center justify-center sm:mt-20 sm:min-h-screen">
       <div className="not-prose relative flex w-full flex-col items-center justify-center px-4 py-12 text-center sm:gap-16 sm:px-8 sm:py-30">
         <div className="absolute inset-0 -z-10 overflow-hidden">
           <div className="bg-primary/10 absolute -top-[10%] left-[50%] h-[40%] w-[60%] -translate-x-1/2 rounded-full blur-3xl" />
@@ -35,7 +35,7 @@ export default function SimplePricing() {
               transition={{ duration: 0.5 }}
               className="from-foreground to-foreground/30 bg-gradient-to-b bg-clip-text text-4xl font-bold text-transparent sm:text-5xl"
             >
-              Pick the perfect plan for your needs
+              Websites & AI That Never Sleep, Driving Your Business
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 10 }}
@@ -43,9 +43,17 @@ export default function SimplePricing() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-muted-foreground max-w-md pt-2 text-lg"
             >
-              Simple, transparent pricing that scales with your business. No
-              hidden fees, no surprises.
+              We craft responsive, user-friendly websites with smart automation
+              to grow your brand.
             </motion.p>
+
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="bg-primary hover:bg-primary/90 mt-6 rounded-lg px-6 py-3 font-semibold text-white shadow-lg transition-all"
+            >
+              Book a Call
+            </motion.button>
           </div>
         </div>
       </div>
