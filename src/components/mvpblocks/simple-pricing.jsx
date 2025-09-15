@@ -1,8 +1,8 @@
 import { Badge } from "@/components/ui/badge";
-
 import { Sparkles } from "lucide-react";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import Button from "@/components/ui/button";
 
 export default function SimplePricing() {
   // const [frequency, setFrequency] = useState("monthly");
@@ -47,13 +47,18 @@ export default function SimplePricing() {
               to grow your brand.
             </motion.p>
 
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-primary hover:bg-primary/90 mt-6 rounded-lg px-6 py-3 font-semibold text-white shadow-lg transition-all"
-            >
-              Book a Call
-            </motion.button>
+            <div className="mt-8 flex justify-center gap-4 sm:flex-row">
+              {/* Primary button */}
+              <Button onClick={() => {}}>Book a Call</Button>
+
+              {/* Secondary button */}
+              <Button
+                className="border-b-muted-foreground hover:bg-primary border-1 border-dashed bg-transparent text-stone-900 hover:text-white"
+                onClick={() => {}}
+              >
+                Learn More
+              </Button>
+            </div>
           </div>
         </div>
       </div>
