@@ -56,7 +56,7 @@ export default function SimplePricing() {
                 className="border-b-muted-foreground hover:bg-primary border-1 border-dashed bg-transparent text-stone-900 hover:text-white"
                 onClick={() => {}}
               >
-                Learn More
+                View Our Work
               </Button>
             </div>
           </div>
