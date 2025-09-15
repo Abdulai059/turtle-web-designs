@@ -29,6 +29,7 @@ export default function SimplePricing() {
               <Sparkles className="text-primary mr-1 h-3.5 w-3.5 animate-pulse" />
               Join Our Watchlist
             </Badge>
+            
             <motion.h1
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
