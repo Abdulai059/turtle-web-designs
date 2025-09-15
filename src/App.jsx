@@ -3,6 +3,9 @@ import Accordion from "./components/Accordion";
 // import Hero from "./components/Navbar/Hero";
 import Header1 from "./components/mvpblocks/header-1";
 import SimplePricing from "./components/mvpblocks/simple-pricing";
+import AboutUs1 from "./components/mvpblocks/about-us-1";
+import Card from "./components/Card";
+import TestimonialsCarousel from "./components/mvpblocks/testimonials-carousel";
 
 function App() {
   return (
@@ -11,9 +14,11 @@ function App() {
 
       <SimplePricing />
 
+      <AboutUs1 />
 
+      <TestimonialsCarousel />
 
-
+      {/* <Card /> */}
       {/* <Navigation /> */}
       {/* <Hero /> */}
       {/* <Accordion /> */}

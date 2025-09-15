@@ -11,6 +11,10 @@
   /* text-align: center; */
 }
 
+/* body{
+  background-color: #121212;
+} */
+
 @theme {
   --font-sans: 'Poppins', sans-serif;
 

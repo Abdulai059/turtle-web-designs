@@ -13,18 +13,18 @@ export default function SimplePricing() {
   if (!mounted) return null;
   return (
     <div className="mt-20 flex items-center justify-center sm:mt-20 sm:min-h-screen">
-      <div className="not-prose relative flex w-full flex-col items-center justify-center px-4 py-12 text-center sm:gap-16 sm:px-8 sm:py-30">
+      <div className="not-prose relative flex w-full flex-col items-center justify-center px-4 py-24 text-center sm:gap-16 sm:px-8 sm:py-30">
         <div className="absolute inset-0 -z-10 overflow-hidden">
           <div className="bg-primary/10 absolute -top-[10%] left-[50%] h-[40%] w-[60%] -translate-x-1/2 rounded-full blur-3xl" />
           <div className="bg-primary/5 absolute -right-[10%] -bottom-[10%] h-[40%] w-[40%] rounded-full blur-3xl" />
           <div className="bg-primary/5 absolute -bottom-[10%] -left-[10%] h-[40%] w-[40%] rounded-full blur-3xl" />
         </div>
 
-        <div className="flex flex-col items-center justify-center gap-8">
-          <div className="flex flex-col items-center space-y-2">
+        <div className="flex flex-col items-center justify-center gap-12">
+          <div className="flex flex-col items-center space-y-4">
             <Badge
               variant="outline"
-              className="border-primary/20 bg-primary/5 mb-4 rounded-full px-4 py-1 text-sm font-medium"
+              className="border-primary/20 bg-primary/5 mb-8 rounded-full px-4 py-1 text-sm font-medium"
             >
               <Sparkles className="text-primary mr-1 h-3.5 w-3.5 animate-pulse" />
               Join Our Watchlist
@@ -41,13 +41,13 @@ export default function SimplePricing() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-muted-foreground max-w-md pt-2 text-lg"
+              className="text-muted-foreground max-w-xl pt-4 text-lg"
             >
-              We craft responsive, user-friendly websites with smart automation
+              We build responsive, user-friendly websites with smart automation
               to grow your brand.
             </motion.p>
 
-            <div className="mt-8 flex justify-center gap-4 sm:flex-row">
+            <div className="mt-12 flex justify-center gap-5 sm:flex-row">
               {/* Primary button */}
               <Button onClick={() => {}}>Book a Call</Button>
 
