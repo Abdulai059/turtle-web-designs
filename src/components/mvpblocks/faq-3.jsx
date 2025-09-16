@@ -5,9 +5,6 @@ import { ChevronDown, Mail } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
 
-
-
-
 function FAQItem({ question, answer, index }) {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -32,7 +29,7 @@ function FAQItem({ question, answer, index }) {
       >
         <h3
           className={cn(
-            "text-left text-base font-medium transition-colors duration-200",
+            "text-left text-base font-medium transition-colors duration-200 sm:text-lg",
             "text-foreground/80",
             isOpen && "text-foreground",
           )}
@@ -98,7 +95,7 @@ function FAQItem({ question, answer, index }) {
                   duration: 0.3,
                   ease: "easeOut",
                 }}
-                className="text-muted-foreground text-sm leading-relaxed"
+                className="text-muted-foreground text-sm leading-relaxed sm:text-base"
               >
                 {answer}
               </motion.p>
