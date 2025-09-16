@@ -22,7 +22,7 @@ export default function SimplePricing() {
 
         <div className="flex flex-col items-center justify-center gap-12">
           <div className="flex flex-col items-center space-y-4">
-            <Badge
+            <Badge 
               variant="outline"
               className="border-primary/20 bg-primary/5 mb-8 rounded-full px-4 py-1 text-sm font-medium"
             >
@@ -42,7 +42,7 @@ export default function SimplePricing() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-muted-foreground max-w-xl pt-4 text-lg"
+              className="text-muted-foreground max-w-xl pt-4 text-base sm:text-lg"
             >
               We build responsive, user-friendly websites with smart automation
               to grow your brand.

@@ -8,8 +8,8 @@ const navItems = [
   { name: "Home", href: "/" },
   { name: "Features", href: "/features" },
   {
-    name: "Products",
-    href: "/products",
+    name: "Services",
+    href: "/Services",
     hasDropdown: true,
     dropdownItems: [
       {
@@ -27,6 +27,7 @@ const navItems = [
   },
   { name: "Pricing", href: "/pricing" },
   { name: "About", href: "/about" },
+  { name: "Contact", href: "/Contact" },
 ];
 
 export default function Header1() {
@@ -165,7 +166,7 @@ export default function Header1() {
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Link
                 prefetch={false}
-                href="/signup"
+                href="/getStarted"
                 className="inline-flex items-center space-x-2 rounded-full bg-gradient-to-r from-rose-500 to-rose-700 px-6 py-2.5 font-medium text-white transition-all duration-200 hover:shadow-lg"
               >
                 <span>Get Started</span>
@@ -212,15 +213,15 @@ export default function Header1() {
                 <div className="space-y-2 px-4 py-2">
                   <Link
                     prefetch={false}
-                    href="/login"
+                    href="/bookcall"
                     className="text-foreground hover:bg-muted block w-full rounded-lg py-2.5 text-center font-medium transition-colors duration-200"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
-                    Sign In
+                    Book a Call
                   </Link>
                   <Link
                     prefetch={false}
-                    href="/signup"
+                    href="/getStarted"
                     className="block w-full rounded-lg bg-gradient-to-r from-rose-500 to-rose-700 py-2.5 text-center font-medium text-white transition-all duration-200 hover:shadow-lg"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >

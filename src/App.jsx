@@ -1,11 +1,11 @@
-import Accordion from "./components/Accordion";
-// import Navigation from "./components/Navigation";
-// import Hero from "./components/Navbar/Hero";
 import Header1 from "./components/mvpblocks/header-1";
 import SimplePricing from "./components/mvpblocks/simple-pricing";
 import AboutUs1 from "./components/mvpblocks/about-us-1";
 import Card from "./components/Card";
 import TestimonialsCarousel from "./components/mvpblocks/testimonials-carousel";
+import AboutUs from "./components/mvpblocks/aboutUs";
+import Faq3 from "./components/mvpblocks/faq-3";
+
 
 function App() {
   return (
@@ -14,9 +14,12 @@ function App() {
 
       <SimplePricing />
 
-      <AboutUs1 />
+      <AboutUs />
+      {/* <AboutUs1 /> */}
 
       <TestimonialsCarousel />
+
+      <Faq3/>
 
       {/* <Card /> */}
       {/* <Navigation /> */}
