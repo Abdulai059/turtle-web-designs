@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Button from "@/components/ui/button";
 
-export default function SimplePricing() {
+export default function Homepage() {
   // const [frequency, setFrequency] = useState("monthly");
   const [mounted, setMounted] = useState(false);
   useEffect(() => {

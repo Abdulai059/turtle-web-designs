@@ -48,7 +48,7 @@ const defaultValues = [
     icon: "Globe",
   },
 ];
-export default function AboutUs1() {
+export default function AboutUs() {
   const aboutData = {
     title: "About Us",
     subtitle:
@@ -78,7 +78,8 @@ export default function AboutUs1() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="mx-auto mb-16 max-w-2xl text-center">
+          className="mx-auto mb-16 max-w-2xl text-center"
+        >
           <h1 className="from-foreground/80 via-foreground to-foreground/80 bg-gradient-to-r bg-clip-text text-4xl font-bold tracking-tight text-transparent sm:text-5xl md:text-6xl">
             {aboutData.title}
           </h1>
@@ -95,10 +96,12 @@ export default function AboutUs1() {
               missionInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }
             }
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-            className="relative z-10 grid gap-12 md:grid-cols-2">
+            className="relative z-10 grid gap-12 md:grid-cols-2"
+          >
             <motion.div
               whileHover={{ y: -5, boxShadow: "0 20px 40px rgba(0,0,0,0.1)" }}
-              className="group border-border/40 relative block overflow-hidden rounded-2xl border bg-gradient-to-br p-10 backdrop-blur-3xl">
+              className="group border-border/40 relative block overflow-hidden rounded-2xl border bg-gradient-to-br p-10 backdrop-blur-3xl"
+            >
               <BorderBeam
                 duration={8}
                 size={300}
@@ -122,7 +125,8 @@ export default function AboutUs1() {
 
             <motion.div
               whileHover={{ y: -5, boxShadow: "0 20px 40px rgba(0,0,0,0.1)" }}
-              className="group border-border/40 relative block overflow-hidden rounded-2xl border bg-gradient-to-br p-10 backdrop-blur-3xl">
+              className="group border-border/40 relative block overflow-hidden rounded-2xl border bg-gradient-to-br p-10 backdrop-blur-3xl"
+            >
               <BorderBeam
                 duration={8}
                 size={300}
@@ -144,7 +148,7 @@ export default function AboutUs1() {
           </motion.div>
         </div>
 
-      {/* <div ref={valuesRef} className="mb-24">
+        {/* <div ref={valuesRef} className="mb-24">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={

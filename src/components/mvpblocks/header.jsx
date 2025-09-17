@@ -30,7 +30,7 @@ const navItems = [
   { name: "Contact", href: "/Contact" },
 ];
 
-export default function Header1() {
+export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
