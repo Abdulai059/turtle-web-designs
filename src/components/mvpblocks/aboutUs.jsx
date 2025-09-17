@@ -9,6 +9,7 @@ function aboutUs() {
         gradientSecond="radial-gradient(50% 50% at 50% 50%, hsla(333, 100%, 85%, 0.08) 0, hsla(335, 100%, 55%, 0.04) 80%, transparent 100%)"
         gradientThird="radial-gradient(50% 50% at 50% 50%, hsla(332, 100%, 85%, 0.06) 0, hsla(327, 100%, 85%, 0.06) 80%, transparent 100%)"
       />
+    
 
       <div className="max-w-xl space-y-12 px-5 text-center">
         <span className="rounded-full border px-4 py-2 text-xs tracking-wide">
