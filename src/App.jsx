@@ -5,7 +5,7 @@ import Card from "./components/Card";
 import TestimonialsCarousel from "./components/mvpblocks/testimonials-carousel";
 import AboutUs from "./components/mvpblocks/aboutUs";
 import Faq3 from "./components/mvpblocks/faq-3";
-
+import CTA2 from "./components/mvpblocks/cta-2";
 
 function App() {
   return (
@@ -19,7 +19,9 @@ function App() {
 
       <TestimonialsCarousel />
 
-      <Faq3/>
+      <Faq3 />
+
+      <CTA2 />
 
       {/* <Card /> */}
       {/* <Navigation /> */}
