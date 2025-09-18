@@ -19,7 +19,7 @@ export default function CTA2() {
 
           <div className="relative z-10">
             <h1 className="mb-3 text-3xl font-bold text-white sm:text-4xl md:mb-4 md:text-5xl">
-              Let&apos;s Get In Touch.
+              Ready to Build Your Website?
             </h1>
             <p className="mb-6 max-w-md text-base text-white sm:text-lg md:mb-8">
               Your website should work for you, not against you. We craft

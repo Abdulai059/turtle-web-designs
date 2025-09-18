@@ -17,9 +17,11 @@ function aboutUs() {
 
         <div className="mt-9 flex items-center justify-center gap-2">
           <span className="h-8 w-8 rounded-full bg-red-500"></span>
-          <h2 className="text-3xl font-bold">Building the Future</h2>
+          <h2 className="from-foreground to-foreground/30 bg-gradient-to-b bg-clip-text text-4xl font-bold text-transparent">
+            Building the Future
+          </h2>
         </div>
-        <p className="text-muted-foreground mb-16 text-base leading-relaxed sm:text-lg">
+        <p className="text-foreground/70 mb-16 text-base leading-relaxed sm:text-lg">
           We’re shaping the future of businesses through modern web design and
           intelligent automation blending creativity, performance, and
           innovation to drive sustainable growth and lasting impact.
@@ -32,7 +34,9 @@ function aboutUs() {
             rel="noopener noreferrer"
             className="group flex items-center space-x-2"
           >
-            <span className="text-lg">Devouring Details</span>
+            <span className="text-foreground/70 text-lg">
+              Devouring Details
+            </span>
 
             <span className="mx-2 flex-1 border-b border-dotted border-neutral-600"></span>
 
@@ -49,7 +53,7 @@ function aboutUs() {
             rel="noopener noreferrer"
             className="group flex items-center space-x-2"
           >
-            <span className="text-lg">Rauno.me</span>
+            <span className="text-foreground/70 text-lg">Rauno.me</span>
 
             <span className="mx-2 flex-1 border-b border-dotted border-neutral-600"></span>
 

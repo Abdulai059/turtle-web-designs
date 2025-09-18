@@ -30,7 +30,6 @@ const footerColumns = [
 const legalLinks = [
   "Terms of Service",
   "Privacy Policy",
-  "Cookie Settings",
   "Accessibility",
 ];
 
