@@ -5,6 +5,7 @@ import AboutUs from "./components/mvpblocks/aboutUs";
 import Faq3 from "./components/mvpblocks/faq";
 import CTA2 from "./components/mvpblocks/cta";
 import Homepage from "./components/mvpblocks/homepage";
+import Footer from "./components/mvpblocks/footer";
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
       <Faq3 />
 
       <CTA2 />
+
+      <Footer />
     </>
   );
 }
