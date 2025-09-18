@@ -1,20 +1,26 @@
-
 import { Instagram, Linkedin, Twitter, Youtube } from "lucide-react";
 
 const footerColumns = [
-  {
-    title: "Services",
-    links: [
-      "Web Development",
-      "Customer Service Chatbot",
-      "AI Automation",
-      "Maintenance & Support",
-    ],
-  },
+  // {
+  //   title: "Services",
+  //   links: [
+  //     "Web Development",
+  //     "Customer Service Chatbot",
+  //     "AI Automation",
+  //     "Maintenance & Support",
+  //   ],
+  // },
+
   {
     title: "Company",
     links: ["About Us", "Contact", "Careers", "Potfolio"],
   },
+
+  {
+    title: "Product",
+    links: ["Features", "Pricing", "Integrations", "Updates"],
+  },
+
   {
     title: "Resources",
     links: ["FAQs", "Blog", "Client Testimonials"],
@@ -77,9 +83,7 @@ export default function Footer() {
           </div>
         </div>
 
-
         <div className="mb-16 grid grid-cols-2 gap-8 md:grid-cols-4 lg:grid-cols-5">
-
           <div className="col-span-2 lg:col-span-1">
             <div className="mb-6 flex items-center space-x-2">
               <div className="bg-primary flex h-10 w-10 items-center justify-center rounded-full">
@@ -116,11 +120,10 @@ export default function Footer() {
                 </a>
               ))}
             </div>
-          
           </div>
-          
+
           {footerColumns.map((col) => (
-            <div key={col.title}>
+            <div key={col.title} className=" sm:relative sm:left-52">
               <h4 className="mb-4 text-lg font-semibold">{col.title}</h4>
               <ul className="space-y-3">
                 {col.links.map((text) => (
@@ -137,8 +140,6 @@ export default function Footer() {
             </div>
           ))}
         </div>
-
-
 
         <div className="border-foreground/10 flex flex-col items-center justify-between border-t pt-8 md:flex-row">
           <p className="text-foreground/60 mb-4 text-sm md:mb-0">
