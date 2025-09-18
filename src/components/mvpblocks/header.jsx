@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ChevronDown, ArrowRight, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useTheme } from "next-themes";
+
 const navItems = [
   { name: "Home", href: "/" },
   { name: "Features", href: "/features" },
@@ -163,6 +164,9 @@ export default function Header() {
             >
               Sign In
             </Link> */}
+
+           
+
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Link
                 prefetch={false}
