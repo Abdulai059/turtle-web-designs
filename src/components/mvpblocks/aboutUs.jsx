@@ -1,7 +1,7 @@
 import { ExternalLink } from "lucide-react";
 import { Spotlight } from "../ui/spotlight";
 
-function aboutUs() {
+function AboutUs() {
   return (
     <section className="relative flex w-full justify-center overflow-hidden py-16 pt-20">
       <Spotlight
@@ -68,4 +68,4 @@ function aboutUs() {
   );
 }
 
-export default aboutUs;
+export default AboutUs;

@@ -27,14 +27,10 @@ const footerColumns = [
   },
 ];
 
-const legalLinks = [
-  "Terms of Service",
-  "Privacy Policy",
-  "Accessibility",
-];
+const legalLinks = ["Terms of Service", "Privacy Policy", "Accessibility"];
 
 const socialIcons = [
-  { icon: <Instagram className="h-5 w-5" />, href: "#" },
+  // { icon: <Instagram className="h-5 w-5" />, href: "#" },
   { icon: <Twitter className="h-5 w-5" />, href: "#" },
   { icon: <Linkedin className="h-5 w-5" />, href: "#" },
   { icon: <Youtube className="h-5 w-5" />, href: "#" },
@@ -54,7 +50,7 @@ export default function Footer() {
               <h3 className="mb-4 text-2xl font-bold md:text-3xl">
                 Stay ahead with Acme Inc.
               </h3>
-              <p className="text-foreground/70 mb-6">
+              <p className="text-foreground/70 mb-6 sm:text-base">
                 Join thousands of professionals who trust Acme Inc. for
                 innovative business solutions.
               </p>
@@ -104,7 +100,7 @@ export default function Footer() {
               <span className="text-xl font-bold">Acme Inc.</span>
             </div>
 
-            <p className="text-foreground/60 mb-6">
+            <p className="text-foreground/60 mb-6 sm:text-base">
               Empowering businesses with reliable, scalable, and innovative
               solutions.
             </p>
@@ -122,7 +118,7 @@ export default function Footer() {
           </div>
 
           {footerColumns.map((col) => (
-            <div key={col.title} className=" sm:relative sm:left-52">
+            <div key={col.title} className="sm:relative sm:left-52">
               <h4 className="mb-4 text-lg font-semibold">{col.title}</h4>
               <ul className="space-y-3">
                 {col.links.map((text) => (
