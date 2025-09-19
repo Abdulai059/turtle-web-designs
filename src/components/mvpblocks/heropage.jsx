@@ -2,7 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import { Sparkles } from "lucide-react";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import Button from "@/components/ui/button";
+import { Button } from "../ui/button";
 
 export default function Heropage() {
   // const [frequency, setFrequency] = useState("monthly");
@@ -22,14 +22,14 @@ export default function Heropage() {
 
         <div className="flex flex-col items-center justify-center gap-12">
           <div className="flex flex-col items-center space-y-4">
-            <Badge 
+            <Badge
               variant="outline"
               className="border-primary/20 bg-primary/5 mb-8 rounded-full px-4 py-1 text-sm font-medium"
             >
               <Sparkles className="text-primary mr-1 h-3.5 w-3.5 animate-pulse" />
               Join Our Watchlist
             </Badge>
-            
+
             <motion.h1
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
@@ -50,13 +50,12 @@ export default function Heropage() {
 
             <div className="mt-12 flex justify-center gap-5 sm:flex-row">
               {/* Primary button */}
-              <Button onClick={() => {}}>Book a Call</Button>
+              <Button className="px-4 py-5 text-base" onClick={() => {}}>
+                Book a Call
+              </Button>
 
               {/* Secondary button */}
-              <Button
-                className="border-b-muted-foreground hover:bg-primary border-1 border-dashed bg-transparent text-stone-900 hover:text-white"
-                onClick={() => {}}
-              >
+              <Button className="px-4 py-5 text-base" variant="dashed" onClick={() => {}}>
                 View Our Work
               </Button>
             </div>

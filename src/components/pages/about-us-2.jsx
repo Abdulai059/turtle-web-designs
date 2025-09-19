@@ -4,7 +4,7 @@ import { NumberTicker } from "@/components/ui/counter";
 import { useTheme } from "next-themes";
 import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
-import Header from "../mvpblocks/header";
+import { Header } from "../mvpblocks/header";
 import {
   Users,
   Award,
@@ -75,7 +75,7 @@ const StatItem = ({
 
 export default function AboutUs2() {
   return (
-    <section className="relative w-full overflow-hidden sm:mt-20 py-25 md:py-24">
+    <section className="relative w-full overflow-hidden py-25 sm:mt-20 md:py-24">
       <Header />
 
       {/* Background pattern */}

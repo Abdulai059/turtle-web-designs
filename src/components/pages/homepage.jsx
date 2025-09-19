@@ -1,4 +1,4 @@
-import Header from "../mvpblocks/header";
+import { Header } from "../mvpblocks/header";
 import Heropage from "../mvpblocks/heropage";
 import AboutUs from "../mvpblocks/aboutUs";
 import TestimonialsCarousel from "../mvpblocks/testimonials-carousel";

@@ -27,7 +27,6 @@ const footerColumns = [
   },
 ];
 
-const legalLinks = ["Terms of Service", "Privacy Policy", "Accessibility"];
 
 const socialIcons = [
   // { icon: <Instagram className="h-5 w-5" />, href: "#" },
@@ -136,23 +135,35 @@ export default function Footer() {
           ))}
         </div>
 
-        <div className="border-foreground/10 flex flex-col items-center justify-between border-t pt-8 md:flex-row">
-          <p className="text-foreground/60 mb-4 text-sm md:mb-0">
-            © 2023 Acme Inc. All rights reserved.
-          </p>
-          <div className="flex flex-wrap justify-center gap-6">
-            {legalLinks.map((text) => (
-              <a
-                key={text}
-                href="#"
-                className="text-foreground/60 hover:text-foreground text-sm"
-              >
-                {text}
-              </a>
-            ))}
-          </div>
-        </div>
+        
+        <Copyright/>
       </div>
     </footer>
   );
 }
+
+const legalLinks = ["Terms of Service", "Privacy Policy", "Accessibility"];
+
+
+export function Copyright() {
+  return (
+    <div className="border-foreground/10 flex flex-col items-center justify-between border-t pt-8 md:flex-row">
+      <p className="text-foreground/60 mb-4 text-sm md:mb-0">
+        © 2023 Acme Inc. All rights reserved.
+      </p>
+      <div className="flex flex-wrap justify-center gap-6">
+        {legalLinks.map((text) => (
+          <a
+            key={text}
+            href="#"
+            className="text-foreground/60 hover:text-foreground text-sm"
+          >
+            {text}
+          </a>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+
