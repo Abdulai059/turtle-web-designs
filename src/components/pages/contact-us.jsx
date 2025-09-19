@@ -10,8 +10,9 @@ import {
   Instagram,
   Send,
 } from "lucide-react";
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-
+import { Button } from "../ui/button";
 
 export default function ContactUs() {
   const [state, setState] = useState({
@@ -41,28 +42,43 @@ export default function ContactUs() {
   };
 
   return (
-    <section className="mx-auto w-full max-w-screen-md px-4 min-h-scree">
-      <h2 className="mt-4 mb-5 bg-gradient-to-br from-gray-300 via-blue-300 to-gray-700 bg-clip-text text-center text-4xl font-bold text-transparent md:text-6xl">
-        Let's Get in Touch
-      </h2>
-      <p className="mb-6 text-center text-gray-400">
-        Fill out the form below and we&apos;ll get back to you as soon as
-        possible.
-      </p>
+    <section className="flex min-h-screen flex-col items-center justify-center px-4 py-12">
+      <div className="not-prose relative overflow-hidden px-4 py-25">
+        <div className="absolute inset-0 -z-10 overflow-hidden">
+          <div className="bg-primary/10 absolute -top-[10%] left-[50%] h-[40%] w-[60%] -translate-x-1/2 rounded-full blur-3xl" />
+          <div className="bg-primary/5 absolute -right-[10%] -bottom-[10%] h-[40%] w-[40%] rounded-full blur-3xl" />
+          <div className="bg-primary/5 absolute -bottom-[10%] -left-[10%] h-[40%] w-[40%] rounded-full blur-3xl" />
+        </div>
 
-      <div
-        className="grid gap-12 rounded-lg border border-gray-700 bg-white/10 px-6 py-10 shadow-inner shadow-slate-800 md:grid-cols-2"
-        style={{
-          backgroundImage:
-            "radial-gradient(164.75% 100% at 50% 0,#272f3c 0,#0b1224 48.73%)",
-        }}
-      >
-        <ContactForm
-          state={state}
-          handleChange={handleChange}
-          handleSubmit={handleSubmit}
-        />
-        <ContactDetails />
+        {/* Title */}
+        <motion.h1
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="from-foreground to-foreground/30 mb-4 bg-gradient-to-b bg-clip-text text-center text-4xl font-bold text-transparent sm:text-5xl md:text-6xl"
+        >
+          Let's Get in Touch
+        </motion.h1>
+
+        <motion.p
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          className="mb-8 text-center text-gray-400"
+        >
+          Fill out the form below and we&apos;ll get back to you as soon as
+          possible.
+        </motion.p>
+
+        {/* Form & Details Container */}
+        <div className="grid w-full max-w-screen-md gap-12 rounded-lg border px-6 py-10 shadow-inner md:grid-cols-2">
+          <ContactForm
+            state={state}
+            handleChange={handleChange}
+            handleSubmit={handleSubmit}
+          />
+          <ContactDetails />
+        </div>
       </div>
     </section>
   );
@@ -118,14 +134,14 @@ function ContactForm({ state, handleChange, handleSubmit }) {
         )}
       </div>
 
-      <button
+      <Button
         type="submit"
         disabled={state.submitting}
         className="group relative h-12 w-full rounded-md bg-gradient-to-br from-slate-800 to-slate-700 font-medium text-white shadow-inner transition-all hover:from-slate-700 hover:to-slate-800"
       >
         {state.submitting ? "Sending..." : "Send"}
         <Send className="ml-2 inline h-4 w-4" />
-      </button>
+      </Button>
     </form>
   );
 }
