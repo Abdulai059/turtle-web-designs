@@ -1,4 +1,3 @@
-"use client";
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ChevronDown, ArrowRight } from "lucide-react";
@@ -28,7 +27,7 @@ const navItems = [
     ],
   },
   { name: "Pricing", href: "/pricing" },
-  { name: "About", href: "/about" },
+  { name: "About", href: "/about-us" },
   { name: "Contact", href: "/Contact" },
 ];
 
@@ -94,8 +93,8 @@ export default function Header() {
                 onMouseLeave={() => setActiveDropdown(null)}
               >
                 <Link
-                  prefetch={false}
-                  href={item.href}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  to={item.href}
                   className="text-foreground flex items-center space-x-1 font-medium transition-colors duration-200 hover:text-rose-500"
                 >
                   <span>{item.name}</span>
@@ -117,9 +116,9 @@ export default function Header() {
                       >
                         {item.dropdownItems?.map((dropdownItem) => (
                           <Link
-                            prefetch={false}
+                            onClick={() => setIsMobileMenuOpen(false)}
                             key={dropdownItem.name}
-                            href={dropdownItem.href}
+                            to={dropdownItem.href}
                             className="hover:bg-muted block px-4 py-3 transition-colors duration-200"
                           >
                             <div className="text-foreground font-medium">
@@ -151,8 +150,8 @@ export default function Header() {
 
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Link
-                prefetch={false}
-                href="/getStarted"
+                
+                to="/getStarted"
                 className="inline-flex items-center space-x-2 rounded-full bg-gradient-to-r from-rose-500 to-rose-700 px-6 py-2.5 font-medium text-white transition-all duration-200 hover:shadow-lg"
               >
                 <span>Get Started</span>
@@ -187,9 +186,8 @@ export default function Header() {
               <div className="border-border bg-background/95 mt-4 space-y-2 rounded-xl border py-4 shadow-xl backdrop-blur-lg">
                 {navItems.map((item) => (
                   <Link
-                    prefetch={false}
                     key={item.name}
-                    href={item.href}
+                    to={item.href}
                     className="text-foreground hover:bg-muted block px-4 py-3 font-medium transition-colors duration-200"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
@@ -198,16 +196,14 @@ export default function Header() {
                 ))}
                 <div className="space-y-2 px-4 py-2">
                   <Link
-                    prefetch={false}
-                    href="/bookcall"
+                    to="/bookcall"
                     className="text-foreground hover:bg-muted block w-full rounded-lg py-2.5 text-center font-medium transition-colors duration-200"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     Book a Call
                   </Link>
                   <Link
-                    prefetch={false}
-                    href="/getStarted"
+                    to="/getStarted"
                     className="block w-full rounded-lg bg-gradient-to-r from-rose-500 to-rose-700 py-2.5 text-center font-medium text-white transition-all duration-200 hover:shadow-lg"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
