@@ -1,8 +1,8 @@
 "use client";
-import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Tabs, TabsList, TabsTrigger } from "@/ui/tabs";
 import NumberFlow from "@number-flow/react";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { Badge } from "@/ui/badge";
+import { Button } from "@/ui/button";
 import {
   Card,
   CardContent,
@@ -10,13 +10,13 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
+} from "@/ui/card";
 import { cn } from "@/lib/utils";
 import { Sparkles, ArrowRight, Check, Star, Zap, Shield } from "lucide-react";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Header } from "../mvpblocks/header";
-import { Copyright } from "../mvpblocks/footer";
+import { Header } from "../components/header";
+import { Copyright } from "../components/footer";
 
 const plans = [
   {
@@ -128,7 +128,7 @@ export default function SimplePricing() {
         <PricingCards frequency={frequency} />
       </div>
 
-       <Copyright />
+      <Copyright />
     </div>
   );
 }

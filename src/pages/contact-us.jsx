@@ -13,7 +13,7 @@ import {
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Button } from "../ui/button";
-import { Header } from "../mvpblocks/header";
+import { Header } from "../components/header";
 
 export default function ContactUs() {
   const [state, setState] = useState({
@@ -43,17 +43,18 @@ export default function ContactUs() {
   };
 
   return (
-    <section className="flex min-h-screen flex-col items-center justify-center px-4 py-12">
+    <section className="relative flex min-h-screen w-full flex-col items-center justify-center overflow-hidden px-4 py-12">
+      {/* Decorative elements */}
+      <div className="bg-primary/5 absolute top-20 -left-20 h-64 w-64 rounded-full blur-3xl" />
+      <div className="bg-primary/5 absolute -right-20 bottom-20 h-64 w-64 rounded-full blur-3xl" />
 
-
-
-      <div className="not-prose relative overflow-hidden px-4 sm:mt-8 py-8 mt-8">
+      <div className="not-prose relative mt-8 overflow-hidden px-4 py-8 sm:mt-8">
         <div className="absolute inset-0 -z-10 overflow-hidden">
           <div className="bg-primary/10 absolute -top-[10%] left-[50%] h-[40%] w-[60%] -translate-x-1/2 rounded-full blur-3xl" />
           <div className="bg-primary/5 absolute -right-[10%] -bottom-[10%] h-[40%] w-[40%] rounded-full blur-3xl" />
           <div className="bg-primary/5 absolute -bottom-[10%] -left-[10%] h-[40%] w-[40%] rounded-full blur-3xl" />
         </div>
-        <Header/>
+        <Header />
 
         {/* Title */}
         <motion.h1
@@ -200,7 +201,7 @@ function ContactDetails() {
       <div className="mt-6 flex gap-4">
         {[Twitter, Facebook, Instagram, Github].map((Icon, i) => (
           <Link key={i} href="#" className={`${iconClasses} bg-white`}>
-            <Icon className="h-5 w-5 text-grey" />
+            <Icon className="text-grey h-5 w-5" />
           </Link>
         ))}
       </div>

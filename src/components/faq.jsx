@@ -3,7 +3,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown, Mail } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { Badge } from "@/components/ui/badge";
+import { Badge } from "@/ui/badge";
 
 function FAQItem({ question, answer, index }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -164,7 +164,6 @@ export default function Faq3() {
           ))}
         </div>
 
-        
         {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

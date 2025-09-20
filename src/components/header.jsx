@@ -14,16 +14,25 @@ const navItems = [
     hasDropdown: true,
     dropdownItems: [
       {
-        name: "Analytics",
-        href: "/analytics",
-        description: "Track your metrics",
+        name: "Web Design & Development",
+        href: "/services/web-design",
+        description: "Modern, responsive websites",
       },
       {
-        name: "Dashboard",
-        href: "/dashboard",
-        description: "Manage your data",
+        name: "Chatbot Integration",
+        href: "/services/chatbots",
+        description: "AI-powered chatbots for websites & WhatsApp.",
       },
-      { name: "Reports", href: "/reports", description: "Generate insights" },
+      {
+        name: "Business Automation",
+        href: "/services/automation",
+        description: "Bookings, and workflows.",
+      },
+      {
+        name: "Maintenance & Support",
+        href: "/services/support",
+        description: "Updates, monitoring, & technical help.",
+      },
     ],
   },
   { name: "Pricing", href: "/pricing" },
@@ -119,7 +128,7 @@ export function Header() {
                             onClick={() => setIsMobileMenuOpen(false)}
                             key={dropdownItem.name}
                             to={dropdownItem.href}
-                            className="hover:bg-muted block px-4 py-3 transition-colors duration-200"
+                            className="hover:bg-muted block px-4 py-3 text-left transition-colors duration-200"
                           >
                             <div className="text-foreground font-medium">
                               {dropdownItem.name}

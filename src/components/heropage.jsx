@@ -1,4 +1,4 @@
-import { Badge } from "@/components/ui/badge";
+import { Badge } from "@/ui/badge";
 import { Sparkles } from "lucide-react";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
@@ -55,7 +55,11 @@ export default function Heropage() {
               </Button>
 
               {/* Secondary button */}
-              <Button className="px-4 py-5 text-base" variant="dashed" onClick={() => {}}>
+              <Button
+                className="px-4 py-5 text-base"
+                variant="dashed"
+                onClick={() => {}}
+              >
                 View Our Work
               </Button>
             </div>

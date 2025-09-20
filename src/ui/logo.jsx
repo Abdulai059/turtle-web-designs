@@ -9,7 +9,7 @@ function Logo() {
       whileHover={{ scale: 1.05 }}
       transition={{ type: "spring", stiffness: 400, damping: 10 }}
     >
-      <Link prefetch={false} href="/" className="flex items-center space-x-2">
+      <Link  to="/" className="flex items-center space-x-2">
         <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-rose-500 to-rose-700">
           <Sparkles className="h-5 w-5 text-white" />
         </div>

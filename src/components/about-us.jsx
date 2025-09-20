@@ -1,9 +1,9 @@
 "use client";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Spotlight } from "@/components/ui/spotlight";
-import { BorderBeam } from "@/components/ui/border-beam";
-import { CardHoverEffect } from "@/components/ui/pulse-card";
+import { Spotlight } from "@/ui/spotlight";
+import { BorderBeam } from "@/ui/border-beam";
+import { CardHoverEffect } from "@/ui/pulse-card";
 import {
   Globe,
   Users,

@@ -1,10 +1,10 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { NumberTicker } from "@/components/ui/counter";
+import { NumberTicker } from "@/ui/counter";
 import { useTheme } from "next-themes";
 import { cn } from "@/lib/utils";
-import { Badge } from "@/components/ui/badge";
-import { Header } from "../mvpblocks/header";
+import { Badge } from "@/ui/badge";
+import { Header } from "../components/header";
 import {
   Users,
   Award,
@@ -76,6 +76,10 @@ const StatItem = ({
 export default function AboutUs2() {
   return (
     <section className="relative w-full overflow-hidden py-25 sm:mt-20 md:py-24">
+      {/* Decorative elements */}
+      <div className="bg-primary/5 absolute top-20 -left-20 h-64 w-64 rounded-full blur-3xl" />
+      <div className="bg-primary/5 absolute -right-20 bottom-20 h-64 w-64 rounded-full blur-3xl" />
+
       <Header />
 
       {/* Background pattern */}

@@ -1,9 +1,9 @@
 import { Route, Routes } from "react-router-dom";
 
-import Homepage from "./components/pages/homepage";
-import AboutUs2 from "./components/pages/about-us-2";
-import SimplePricing from "@/components/pages/simple-pricing"
-import ContactUs from "./components/pages/contact-us"
+import Homepage from "./pages/homepage";
+import AboutUs2 from "./pages/about-us";
+import SimplePricing from "@/pages/simple-pricing";
+import ContactUs from "./pages/contact-us";
 
 function App() {
   return (
