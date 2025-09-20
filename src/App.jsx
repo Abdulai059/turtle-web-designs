@@ -4,8 +4,7 @@ import Homepage from "./pages/homepage";
 import AboutUs2 from "./pages/about-us";
 import SimplePricing from "@/pages/simple-pricing";
 import ContactUs from "./pages/contact-us";
-import Feature from "./components/feature";
-
+import Feature from "./pages/feature";
 
 function App() {
   return (

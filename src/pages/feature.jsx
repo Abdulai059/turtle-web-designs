@@ -7,7 +7,7 @@ import {
   ShieldCheck,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { Header } from "./header";
+import { Header } from "../components/header";
 
 // Create feature data arrays for left and right columns
 const leftFeatures = [
