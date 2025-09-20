@@ -13,6 +13,7 @@ import {
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Button } from "../ui/button";
+import { Header } from "../mvpblocks/header";
 
 export default function ContactUs() {
   const [state, setState] = useState({
@@ -43,12 +44,16 @@ export default function ContactUs() {
 
   return (
     <section className="flex min-h-screen flex-col items-center justify-center px-4 py-12">
-      <div className="not-prose relative overflow-hidden px-4 py-25">
+
+
+
+      <div className="not-prose relative overflow-hidden px-4 sm:mt-8 py-8 mt-8">
         <div className="absolute inset-0 -z-10 overflow-hidden">
           <div className="bg-primary/10 absolute -top-[10%] left-[50%] h-[40%] w-[60%] -translate-x-1/2 rounded-full blur-3xl" />
           <div className="bg-primary/5 absolute -right-[10%] -bottom-[10%] h-[40%] w-[40%] rounded-full blur-3xl" />
           <div className="bg-primary/5 absolute -bottom-[10%] -left-[10%] h-[40%] w-[40%] rounded-full blur-3xl" />
         </div>
+        <Header/>
 
         {/* Title */}
         <motion.h1
@@ -86,12 +91,14 @@ export default function ContactUs() {
 
 function ContactForm({ state, handleChange, handleSubmit }) {
   const inputClasses =
-    "w-full rounded-md border border-slate-700 bg-slate-950 px-3 py-2 text-sm text-white shadow-inner shadow-slate-800 outline-none hover:border-slate-600 focus:border-slate-500";
+    "w-full rounded-md border border-slate-700 px-3 py-2 text-sm text-black shadow-inner outline-none hover:border-red-500 focus:border-slate-500";
 
   return (
     <form className="space-y-6 text-slate-300" onSubmit={handleSubmit}>
       <div>
-        <label className="mb-1 block font-medium">Name</label>
+        <label class="mb-1 block font-medium text-gray-700 after:ml-0.5 after:text-red-500 after:content-['*'] ...">
+          Name
+        </label>
         <input
           name="name"
           value={state.name}
@@ -104,7 +111,9 @@ function ContactForm({ state, handleChange, handleSubmit }) {
       </div>
 
       <div>
-        <label className="mb-1 block font-medium">Email</label>
+        <label class="mb-1 block font-medium text-gray-700 after:ml-0.5 after:text-red-500 after:content-['*'] ...">
+          Email
+        </label>
         <input
           name="email"
           value={state.email}
@@ -120,7 +129,9 @@ function ContactForm({ state, handleChange, handleSubmit }) {
       </div>
 
       <div>
-        <label className="mb-1 block font-medium">Message</label>
+        <label class="mb-1 block font-medium text-gray-700 after:ml-0.5 after:text-red-500 after:content-['*'] ...">
+          Message
+        </label>
         <textarea
           name="message"
           value={state.message}
@@ -137,7 +148,7 @@ function ContactForm({ state, handleChange, handleSubmit }) {
       <Button
         type="submit"
         disabled={state.submitting}
-        className="group relative h-12 w-full rounded-md bg-gradient-to-br from-slate-800 to-slate-700 font-medium text-white shadow-inner transition-all hover:from-slate-700 hover:to-slate-800"
+        className="group relative h-12 w-full rounded-md font-medium text-white shadow-inner transition-all hover:to-slate-800"
       >
         {state.submitting ? "Sending..." : "Send"}
         <Send className="ml-2 inline h-4 w-4" />
@@ -148,11 +159,11 @@ function ContactForm({ state, handleChange, handleSubmit }) {
 
 function ContactDetails() {
   const iconClasses =
-    "flex h-10 w-10 items-center justify-center rounded-full border border-slate-600 shadow-inner shadow-gray-800 hover:shadow-md hover:shadow-slate-500 transition duration-300 ease-in-out";
+    "flex h-10 w-10 items-center justify-center rounded-full border border-slate-600  bg-primary hover:shadow-md hover:shadow-red-300 transition duration-300 ease-in-out";
 
   return (
     <div>
-      <h3 className="mb-8 text-2xl font-semibold text-slate-300">
+      <h3 className="mb-8 text-2xl font-semibold text-black">
         Connect with Us
       </h3>
 
@@ -160,7 +171,7 @@ function ContactDetails() {
         <Link href="#" className={iconClasses}>
           <Mail className="h-5 w-5 text-white" />
         </Link>
-        <div className="text-gray-300">
+        <div className="text-gray-600">
           <p>Email us at:</p>
           <p>subha9.5roy350@gmail.com</p>
         </div>
@@ -170,7 +181,7 @@ function ContactDetails() {
         <Link href="#" className={iconClasses}>
           <Phone className="h-5 w-5 text-white" />
         </Link>
-        <div className="text-gray-300">
+        <div className="text-gray-600">
           <p>Call us at:</p>
           <p>XXXXX XXXXX</p>
         </div>
@@ -180,7 +191,7 @@ function ContactDetails() {
         <Link href="#" className={iconClasses}>
           <MapPin className="h-5 w-5 text-white" />
         </Link>
-        <div className="text-gray-300">
+        <div className="text-gray-600">
           <p>Location:</p>
           <p>Techno Main Salt Lake, Sector-V, Kolkata-700091</p>
         </div>
@@ -188,8 +199,8 @@ function ContactDetails() {
 
       <div className="mt-6 flex gap-4">
         {[Twitter, Facebook, Instagram, Github].map((Icon, i) => (
-          <Link key={i} href="#" className={`${iconClasses} bg-gray-800`}>
-            <Icon className="h-5 w-5 text-white" />
+          <Link key={i} href="#" className={`${iconClasses} bg-white`}>
+            <Icon className="h-5 w-5 text-grey" />
           </Link>
         ))}
       </div>
