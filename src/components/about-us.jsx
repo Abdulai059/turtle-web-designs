@@ -48,6 +48,9 @@ const defaultValues = [
     icon: "Globe",
   },
 ];
+
+
+
 export default function AboutUs() {
   const aboutData = {
     title: "About Us",

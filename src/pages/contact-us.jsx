@@ -198,8 +198,8 @@ function ContactDetails() {
         </div>
       </div>
 
-      <div className="mt-6 flex gap-4">
-        {[Twitter, Facebook, Instagram, Github].map((Icon, i) => (
+      <div className="mt-6 flex justify-center gap-4">
+        {[Twitter, Facebook, Github].map((Icon, i) => (
           <Link key={i} href="#" className={`${iconClasses} bg-white`}>
             <Icon className="text-grey h-5 w-5" />
           </Link>
