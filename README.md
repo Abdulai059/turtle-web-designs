@@ -23,7 +23,7 @@ A modern, responsive website for a startup web design agency, showcasing service
 This project demonstrates a professional web presence for a startup web design agency. It includes:
 
 - Responsive, mobile-first design  
-- Sections for Services, Portfolio, Pricing, Testimonials, and Contact.
+- Sections for Services, Portfolio, Pricing, Testimonials, and Contact..
 - Lead generation via website and chatbot integration  
 - Optional business automation for clients  
 
